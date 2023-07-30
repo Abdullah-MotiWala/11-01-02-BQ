@@ -1,0 +1,52 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+p { 
+    color: orange;
+    /* background-color: bisque; */
+    font-size: 2em;
+    font-style: italic;
+    text-transform: capitalize;
+    text-decoration: underline;
+    /* letter-spacing: 2em; */
+    /* word-spacing: 5em; */
+    text-align: justify;
+    /* text-shadow: 5px 2px 10px green; */
+    box-shadow: 5px 2px 10px green;
+    /* margin: 2em */
+    /* margin-top: 3em;
+    margin-right: 2em;
+    margin-bottom: 3em;
+    margin-left: 2em; */
+    /* margin : 3em 2em */
+    margin : 2em 3em 4em 5em;
+    padding:2em
+}
+
+p.country {
+    font-weight: bold;
+    color: brown;
+    font-size: 12px;
+    text-transform: lowercase;
+    line-height: 5em;
+
+}
+
+.continent {
+    color: green;
+    color: rgba(50,205,50,0.5);
+}
+p[class]{
+    /* font-size: 5em; */
+}
+
+input[disabled~="true"] {
+    background-color: red;
+}
+/* #cont {
+    color: unset;
+    font-weight: unset;
+} */
+~=
