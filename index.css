@@ -3,7 +3,7 @@ html {
 }
 
 
-p { 
+p {
     color: orange;
     /* background-color: bisque; */
     font-size: 2em;
@@ -21,8 +21,8 @@ p {
     margin-bottom: 3em;
     margin-left: 2em; */
     /* margin : 3em 2em */
-    margin : 2em 3em 4em 5em;
-    padding:2em
+    margin: 2em 3em 4em 5em;
+    padding: 2em
 }
 
 p.country {
@@ -36,17 +36,66 @@ p.country {
 
 .continent {
     color: green;
-    color: rgba(50,205,50,0.5);
+    color: rgba(50, 205, 50, 0.5);
 }
-p[class]{
+
+p[class] {
     /* font-size: 5em; */
 }
 
 input[disabled~="true"] {
     background-color: red;
 }
+
 /* #cont {
     color: unset;
     font-weight: unset;
 } */
-~=
+div.bg-image {
+    width: 50vw;
+    height: 24rem;
+    /* background-image: url("https://imageio.forbes.com/specials-images/imageserve/5d35eacaf1176b0008974b54/0x0.jpg?format=jpg&crop=4560,2565,x790,y784,safe&width=1200"); */
+    background-image: radial-gradient(blue, green, red);
+    background-position: center;
+}
+
+
+.absolute {
+    background-color: red;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    /* bottom: 0px;*/
+    right: 0px;
+}
+
+.absolute-2 {
+    background-color: green;
+    height: 50px;
+    width: 50px;
+    /* position: absolute; */
+    /* bottom: 0px;
+    right: 0px; */
+}
+.parent-1{
+    margin-top: 50px;
+}
+.parent {
+    width: 80vw;
+    background-color: pink;
+    height: 50px;
+    position: relative;
+    left: 15px;
+    border: 1px solid;
+    z-index: -2;
+}
+
+.fixed {
+    width: 100vw;
+    background-color: green;
+    height: 50px;
+    position: sticky;
+    z-index: 100;
+    top: 50px;
+    z-index: -1;
+}
