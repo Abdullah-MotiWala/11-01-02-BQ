@@ -1,0 +1,52 @@
+* {
+    color: aliceblue;
+}
+
+.parent {
+    width: 20em;
+    height: 20em;
+    position: relative;
+    background-color: blue;
+    right: 0;
+}
+
+.child {
+    /* position: relative; */
+    /* top: 10px;
+    left: 20px; */
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 10em;
+    height: 10em;
+    background-color: green;
+}
+
+.sibling-parent {
+    width: 20em;
+    height: 20em;
+    background-color: orange;
+}
+
+.sticky-parent {
+    width: 30em;
+    height: 20em;
+    background-color: cyan;
+    position: sticky;
+    top: 10px;
+    z-index: 1;
+}
+
+.parent {
+    width: 20em;
+    height: 20em;
+    background-color: pink;
+    border: 1px solid red;
+    z-index: -1;
+}
+
+@media screen and (max-width:500px) {
+    .parent {
+        width: 100vw;
+    }
+}
